@@ -1,21 +1,23 @@
-# Treinamento Angular
-Este projeto foi utilizado para o treinamento de uma equipe de desenvolvimento angular, neste treinamento foi abordado os seguintes temas:
-- Modulos
-- Componentes
-- Diretivas
-- Filtros
-- Serviços
+# Curso e-commerce
 
-Além de outras bibliotecas utilizadas no angular, como:
-- angular-forms
-- rxjs
-- angular-material
+E-commerce desenvolvido durante o curso de Angular da IDS.
 
-Este projeto foi desenvolvido com [Angular CLI](https://github.com/angular/angular-cli) versão 8.1.1.
+## Features
 
-## Rodar em modo de desenvolvimento
+1. Login
+2. Cadastro de novos usuários no sistema
+3. Inclusão, alteração e exclusão de empresa e produto
+4. Listagem de produtos cadastrados
 
-Rode o comando `ng serve` em um terminal e depois abra em seu navegador a url `http://localhost:4200/`. Ao salvar as alterações, automaticamente o servidor do node vai atualizar a url.
+## Demonstration
 
-Para mais detalhes abra a documento do [Angular](https://angular.io/).
-"# CursoAngular" 
+Front-end: https://super-hero-angular.herokuapp.com/
+
+## Installation
+
+1- git clone https://github.com/LucasBortolazzo/CursoAngular.git
+2. cd `..CursoAngular`
+3. run `npm install`
+4. run `ng serve`
+5. access: `http://localhost:4200/`
+
