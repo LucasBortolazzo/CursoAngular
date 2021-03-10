@@ -29,7 +29,7 @@
             <div fxLayout="row" fxLayoutGap="16px">
                 <mat-form-field [appearance]="'outline'">
                     <mat-label>Preço R$</mat-label>
-                    <input matInput mask="separator.2" thousandSeparator="," separatorLimit="99999999999999" formControlName="preco">
+                    <input matInput mask="separator.2" thousandSeparator="." separatorLimit="99999999999999" decimalMarker="," formControlName="preco">
                     <mat-error>{{preco.errors | erro}}</mat-error>
                 </mat-form-field>
             </div>
