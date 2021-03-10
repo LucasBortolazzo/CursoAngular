@@ -9,9 +9,9 @@ E-commerce desenvolvido durante o curso de Angular da IDS.
 3. Inclusão, alteração e exclusão de empresa e produto
 4. Listagem de produtos cadastrados
 
-## Demonstration
+## Demonstration(Heroku)
 
-Front-end: https://super-hero-angular.herokuapp.com/
+https://cursoangularids.herokuapp.com/#/login
 
 ## Installation
 
