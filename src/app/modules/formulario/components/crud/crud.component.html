@@ -1,0 +1,33 @@
+<mat-card class="tela">
+    <mat-card-header>
+        <mat-card-title>{{titulo}}</mat-card-title>
+        <mat-card-subtitle>
+            <span *ngIf="registroId !== null; else elseId">Registro {{registroId}}</span>
+            <ng-template #elseId>Novo registro</ng-template>
+        </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <ng-content></ng-content>
+    </mat-card-content>
+
+    <mat-card-actions fxLayoutAlign="end start" fxLayoutGap="16px">
+        <button mat-fab color="primary" aria-label="Ir para pesquisa" (click)="voltarPesquisa()">
+            <mat-icon>search</mat-icon>
+          </button>
+
+        <button mat-fab color="primary" (click)="limpar()">
+            <mat-icon *ngIf="registroId">add</mat-icon>
+            <mat-icon *ngIf="!registroId">delete_sweep</mat-icon>
+          </button>
+
+        <button mat-fab color="primary" aria-label="Deletar registro" (click)="deletar()" *ngIf="registroId">
+            <mat-icon>delete</mat-icon>
+          </button>
+
+          <button mat-fab color="primary" aria-label="Gravar registro" (click)="salvar()">
+            <mat-icon>done</mat-icon>
+          </button>      
+    </mat-card-actions>
+
+</mat-card>

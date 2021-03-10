@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@keyframes tela-in{
+    from{
+        transform: translateX(32px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.tela{
+    animation-name: tela-in;
+    animation-duration: 400ms;
+    width: 100%;
+    max-width: 800px;
+    margin: 16px auto;
+}
+
+.no-margin{
+    margin: 0!important;
+}
+
+.tela mat-card-actions{
+    margin: 0!important;
+}
+
+.auth-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.auth-container mat-card {
+    width: 100%;
+    max-width: 500px;
+}
+
+.auth-container mat-form-field{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.auth-container mat-card-content{
+    padding-top: 32px;
+}
+
+.auth-container mat-card-actions{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mat-menu-item {
+    align-items: center;
+}
+
+.grid {
+    margin: 55px;
+}
+
+.imgs {
+    height: 300px;
+    width: 400px;
+  }
+
+ .card-zoom:hover {
+    transform: scale(1.06);
+}
+
+.principal {
+    height: 100%;
+}
+
+p {
+   text-align: center;
+}
+
+.produtos {
+    max-width: 960px;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    height: 50%;
+}
+
+.div-background {
+   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255, .5)), url("assets/img/background.jpg");
+   padding-top: 5px;
+   padding-bottom: 50px;
+   min-height: 100%;
+}
+
+.div-background-login {
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("assets/img/login2.jpg");
+    min-height: 100vh;
+ }
+
+ .div-background-cadastro {
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("assets/img/cadastro2.jpg");
+    min-height: 100vh;     
+ }
+
+ .mat-card-custom,
+ .mat-card-subtitle-custom {
+    background: #424242;
+    color: #fff;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}

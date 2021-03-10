@@ -1,0 +1,49 @@
+<div class="main">
+    <mat-toolbar fxLayout="row" color="primary">
+        <button (click)="drawer.toggle()" class="menu-btn" mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span fxFlex>Curso E-commerce</span>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button (click)="irParaLoja()" mat-menu-item>
+                <mat-icon>shopping_cart</mat-icon>
+                <span fxFlex>Ir para loja</span>
+            </button>
+                        
+            <button (click)="sair()" mat-menu-item>
+                <mat-icon>close</mat-icon>
+                <span fxFlex>Sair do sistema</span>
+            </button>
+        </mat-menu>
+    </mat-toolbar>
+    <mat-drawer-container class="main-content">
+        <mat-drawer [opened]="true" mode="side" class="menu" #drawer>
+            <mat-nav-list>
+                <mat-list-item>
+                    <a matLine class="link" [routerLink]="['/admin/empresa']" routerLinkActive="link-activated">
+                        <mat-icon>business</mat-icon>
+                        <span>Empresa</span>
+                    </a>
+                </mat-list-item>
+                <mat-list-item>
+                    <a matLine class="link" [routerLink]="['/admin/produto']" routerLinkActive="link-activated">
+                        <mat-icon>add_shopping_cart</mat-icon>
+                        <span>Produto</span>
+                    </a>
+                </mat-list-item>
+                <mat-list-item>
+                    <a matLine class="link" [routerLink]="['/admin/sobre']" routerLinkActive="link-activated">
+                        <mat-icon>quiz</mat-icon>
+                        <span>Sobre</span>
+                    </a>
+                </mat-list-item>                
+            </mat-nav-list>
+        </mat-drawer>
+        <mat-drawer-content>
+            <router-outlet></router-outlet>
+        </mat-drawer-content>
+    </mat-drawer-container>
+</div>

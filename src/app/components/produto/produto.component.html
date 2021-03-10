@@ -1,0 +1,20 @@
+<div class="div-background">
+    <div class="produtos">
+        <mat-card class="mat-card-custom card-zoom" *ngFor="let produtoExibir of produtos">
+            <mat-card-header>
+                <mat-card-title>{{ produtoExibir.nome | uppercase }}</mat-card-title>
+                <mat-card-subtitle class="mat-card-subtitle-custom">{{ produtoExibir.marca | uppercase }}</mat-card-subtitle>
+            </mat-card-header>
+
+            <img mat-card-image class="imgs" [src]="produtoExibir.imagem" [alt]="produtoExibir.nome">
+
+            <mat-card-content>
+                <div style="color: #43a047;font-weight: bold;" fxLayout="row" fxLayoutGap="8px"
+                    fxLayoutAlign="end center">
+                    <mat-icon>monetization_on</mat-icon>
+                    <span>{{ produtoExibir.preco | currency: 'BRL': true }}</span>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>    
