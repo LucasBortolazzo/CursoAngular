@@ -15,7 +15,7 @@ https://cursoangularids.herokuapp.com/#/login
 
 ## Installation
 
-1- git clone https://github.com/LucasBortolazzo/CursoAngular.git
+1. git clone https://github.com/LucasBortolazzo/CursoAngular.git
 2. cd `..CursoAngular`
 3. run `npm install`
 4. run `ng serve`
