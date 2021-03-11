@@ -3,7 +3,12 @@
         <button (click)="drawer.toggle()" class="menu-btn" mat-icon-button>
             <mat-icon>menu</mat-icon>
         </button>
-        <span fxFlex>Curso E-commerce</span>
+        <span fxFlex>Curso E-commerce
+            <button mat-flat-button class="menu-btn" color="primary" matTooltip="Ir para loja" (click)="irParaLoja()">
+                <mat-icon>shopping_cart</mat-icon>
+            </button>
+
+        </span>
         <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
             <mat-icon>more_vert</mat-icon>
         </button>
@@ -12,7 +17,6 @@
                 <mat-icon>shopping_cart</mat-icon>
                 <span fxFlex>Ir para loja</span>
             </button>
-                        
             <button (click)="sair()" mat-menu-item>
                 <mat-icon>close</mat-icon>
                 <span fxFlex>Sair do sistema</span>
@@ -39,7 +43,7 @@
                         <mat-icon>quiz</mat-icon>
                         <span>Sobre</span>
                     </a>
-                </mat-list-item>                
+                </mat-list-item>
             </mat-nav-list>
         </mat-drawer>
         <mat-drawer-content>
